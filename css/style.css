@@ -43,7 +43,7 @@ body{
 .heading-2,
 .heading-3,
 .heading-4{
-    ont-family: var(--font-display);
+    font-family: var(--font-display);
     font-weight: 400;
 }
 
@@ -52,11 +52,19 @@ body{
 }
 
 .heading-2{
-    
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+}
+
+.heading-2--dark{
+
 }
 
 .heading-3{
-    
+    font-size: 1.6rem;
+    color: var(--primary);
+    text-transform: uppercase;
 }
 
 .heading-4{
@@ -69,6 +77,23 @@ body{
 
 .heading-4--dark{
     color: var(--grey-dark-1);
+}
+
+.btn{
+    background: var(--primary);
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn:hover{
+    background: var(--primary-dark);
 }
 
 /* COMPONENTS */
@@ -129,6 +154,17 @@ body{
 .story__content{
     background: var(--grey-light-1);
     grid-column: col-start 5 / full-end;
+    padding: 6rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.story__text{
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
 }
 
 .homes{
