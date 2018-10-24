@@ -356,4 +356,37 @@ body{
 .footer{
     background: var(--secondary);
     grid-column: full-start / full-end;
+    padding: 8rem;
+}
+
+.nav{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.nav__link:link,
+.nav__link:visited{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    grid-gap: 2rem;
+    transition: all .2s;
+}
+
+.nav__link:hover{
+    background: rgba(255, 255, 255, .5);
+    transform: translateY(-3px);
+}
+
+.copyright{
+    font-size: 1.4rem;
+    color: var(--grey-light-1);
+    margin-top: 6rem;
+    text-align: center;
 }
