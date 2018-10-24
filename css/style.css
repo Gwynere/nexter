@@ -145,7 +145,7 @@ body{
     
 }
 
-/* STORIES */
+/* STORIES COMPONENT */
 .story__pictures{
     background: var(--primary);
     grid-column: full-start / col-end 4;
@@ -187,16 +187,55 @@ body{
     margin-bottom: 4rem;
 }
 
+/* HOMES COMPONENT */
 .homes{
-    background: var(--secondary);
     grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+    margin: 15rem 0;
 }
 
+.home{
+    background: var(--grey-light-1);
+}
+
+.home__img{
+    width: 100%;
+}
+
+.home__like{
+
+}
+
+.home__name{
+
+}
+
+.home__location,
+.home__rooms,
+.home__area,
+.home__price{
+
+}
+
+.home svg{
+    fill: var(--primary);
+    height: 2rem;
+    width: 2rem;
+}
+
+.home p{
+
+}
+
+/* GALLERY COMPONENT */
 .gallery{
     background: var(--grey-dark-1);
     grid-column: full-start / full-end;
 }
 
+/* FOOTER COMPONENT */
 .footer{
     background: var(--secondary);
     grid-column: full-start / full-end;
